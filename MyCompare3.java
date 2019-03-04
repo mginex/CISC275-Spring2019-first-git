@@ -3,10 +3,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-//import firstGit.Dog;
-//import firstGit.*;
 
-public abstract class MyCompare3 implements Comparator<Dog> {
+public class MyCompare3 {
 	
 	public static void main(String[] args){
 		
@@ -16,9 +14,9 @@ public abstract class MyCompare3 implements Comparator<Dog> {
 		dogs.add(new Dog("Alfie", 4));
 
 		System.out.println(dogs);
-		Collections.sort(dogs, new Comparator<Dog>(){
+		Collections.sort(dogs, new Comparator<Animal>(){
 			@Override
-			public int compare(Dog a, Dog b){
+			public int compare(Animal a, Animal b){
 			    return a.getLegs() - b.getLegs();
 			}
 		});
